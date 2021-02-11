@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.conversion-container {
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(to right bottom, rgba(0, 206, 201, 0.4), rgba(129, 236, 236, 0.4)), url(/img/money.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.conversion-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    padding: 50px 0;
+    animation-name: MoveFromBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.container-colon-dolar {
+    width: 70%;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.containter-input {
+    padding: 10px 20px;
+    border: #f5f6fa;
+    border-radius: 100px;
+    animation-name: MoveFromBottom;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
+.btn {
+    padding: 8px;
+    border-radius: 100px;
+    border: #f5f6fa;
+    animation-name: MoveFromBottom;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
+.btn-red {
+    background-color: #ee5253;
+    color: #fff;
+}
+
+.btn-blue {
+    background-color: #0abde3;
+    color: #fff;
+}
+
+.sub-title {
+    margin-bottom: 5px;
+    animation-name: MoveFromBottom;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+    font-size: 20px;
+}
+
+@keyframes MoveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
