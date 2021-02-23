@@ -20,14 +20,15 @@
         </div>
         <div class="container-colon-dolar">
             <h2 class="sub-title">Colones a Dolares</h2>
-            <input class="containter-input" type="text" id="colon" name="colon" placeholder="Colones">
+            <input autocomplete="off" class="containter-input" type="text" id="colon" name="colon" placeholder="Colones">
             <input class="btn btn-red" type="button" id="colon" value="Calcular" onclick="calcularColon();">
+            <br><br>
             <p id="resultado"></p>
+            <br><br>
 
             <script>
                 function calcularColon() {
                     var colon = document.getElementById('colon').value;
-                    var resultado = document.getElementById('resultado');
                     temporal = colon / 611;
                     resultado.innerHTML = temporal.toFixed();
 
@@ -38,7 +39,7 @@
         <div class="container-colon-dolar">
             <h2 class="sub-title">Dolares a Colones</h2>
 
-            <input class="containter-input" type="text" id="dolar" name="dolar" placeholder="Dolares">
+            <input autocomplete="off" class="containter-input" type="text" id="dolar" name="dolar" placeholder="Dolares">
             <input class="btn btn-blue" type="button" id="dolar" value="Calcular" onclick="calcularDolar();">
             <br><br>
             <p id="resultadoDolar"></p>
@@ -46,7 +47,6 @@
                 <script>
                     function calcularDolar() {
                         var dolar = document.getElementById('dolar').value;
-                        var resultadoDolar = document.getElementById('resultadoDolar');
                         temporal = dolar * 611;
                         resultadoDolar.innerHTML = temporal.toFixed();
 
